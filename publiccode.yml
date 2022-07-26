@@ -1,0 +1,99 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - geographic-information-systems
+  - data-visualization
+dependsOn:
+  open:
+    - name: python
+      optional: false
+      version: '2.7'
+      versionMax: ''
+      versionMin: ''
+    - name: PostgreSQL
+      optional: false
+      version: 9.6.X
+      versionMax: ''
+      versionMin: ''
+    - name: GDAL
+      optional: false
+      version: 2.3.x
+      versionMax: ''
+      versionMin: ''
+    - name: MapServer
+      optional: true
+      version: ' 7.2.1'
+      versionMax: ''
+      versionMin: ''
+    - name: CentOS Linux 7
+      optional: true
+      version: ' 7'
+      versionMax: ''
+      versionMin: ''
+description:
+  it:
+    features:
+      - Nessuna interfaccia grafica
+      - Ricerca di immagini satellitari su un ambito geografico definito
+      - Scarico delle immagini
+      - Elaborazione delle immagini e produzioni di indicatori
+    genericName: Raster processor
+    longDescription: |
+      Il servizio di scarico ed elaborazione CSI SentinelScript si occupa di
+      ricercare e scaricare le immagini satellitari sulla zona configurata (Piemonte, Valle d'Aosta e
+      Liguria).
+      Successivamente le immagini scaricate vengono elaborate per generare i
+      suddetti indicatori utili ad un'analisi approfondita del terreno. 
+      Durante l'elaborazione vengono prodotti dei files utili ad una successiva
+      pubblicazione tramite protocolli OGC con il motore cartografico Mapserver. Ovviamente
+      sono da trascurare in quanto non necessari per il funzionamento di questa componente.
+    shortDescription: SentinelScript - Scarico ed elaborazione immagini Copernicus Sentinel-2
+developmentStatus: stable
+intendedAudience:
+  scope:
+    - environment
+    - research
+    - government
+it:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: true
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: false
+    pagopa: false
+    spid: false
+  riuso:
+    codiceIPA: r_piemon
+landingURL: 'https://github.com/regione-piemonte/sentinel'
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: Regione Piemonte
+  repoOwner: Regione Piemonte
+localisation:
+  availableLanguages:
+    - lt
+  localisationReady: false
+maintenance:
+  contacts:
+    - affiliation: CSI-Piemonte
+      email: diego.mo@csi.it
+      name: Diego Mo
+  type: internal
+name: SENTINELSCRIPT
+outputTypes:
+  - image/tiff
+platforms:
+  - windows
+  - linux
+  - mac
+releaseDate: '2022-05-25'
+softwareType: standalone/backend
+softwareVersion: 1.1.0
+url: 'https://github.com/regione-piemonte/sentinel.git'

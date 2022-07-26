@@ -1,0 +1,10 @@
+0 00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23 1,2,3,5-11,13-19,21-26,28-31 * * python /home/geosent/py_scripts/csi_sentinel_01_search.py >> /home/geosent/py_scripts/log_csi_sentinel_01_search.txt
+2 00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23 1,2,3,5-11,13-19,21-26,28-31 * * python /home/geosent/py_scripts/csi_sentinel_02_download.py >> /home/geosent/py_scripts/log_csi_sentinel_02_download.txt
+16 00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19,20,21,22,23 1,2,3,5-11,13-19,21-26,28-31 * * python /home/geosent/py_scripts/csi_sentinel_03_processing_mod3.py >> /home/geosent/py_scripts/log_csi_sentinel_03_processing_mod3.txt
+1 1 4,12,20,27 * * python /home/geosent/py_scripts/csi_sentinel_05_organize.py >> /home/geosent/py_scripts/log_csi_sentinel_05_organize.txt
+1 8 4,12,20,27 * * python /home/geosent/py_scripts/csi_sentinel_06_createIMG_test.py >> /home/geosent/py_scripts/log_csi_sentinel_06_createIMG_test.txt
+#1 16 4,12,20,27 * * python /home/geosent/py_scripts/csi_sentinel_04_deleteOldFile.py >> /home/geosent/py_scripts/log_csi_sentinel_04_deleteOldFile.txt
+1 16 4,12,20,27 * * python /home/geosent/py_scripts/csi_sentinel_05_delta_NBR.py >> /home/geosent/py_scripts/log_csi_sentinel_05_delta_NBR.txt
+1 21 4,12,20,27 * * python /home/geosent/py_scripts/csi_sentinel_05_annual_delta_NBR.py >> /home/geosent/py_scripts/log_csi_sentinel_05_annual_delta_NBR.txt
+50 23 4,12,20,27 * * python /home/geosent/py_scripts/csi_sentinel_07_system_status_evaluation.py >> /home/geosent/py_scripts/log_csi_sentinel_07_system_status_evaluation.txt
+
